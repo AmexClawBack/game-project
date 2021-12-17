@@ -1,10 +1,12 @@
 <!-- PSEUDO CODE -->
-When the user opens the game page there will be a full screen background "fantasy" image
+When the user opens the game page there will be a full screen background of a dark temple with candles 
+in the middle will be a fantasy image (div) with the following 
 The Text on the screen will display "Welcome to Magic the Gathering" 
 underneath that i will have two buttons. one in the image of a 20 sided die, and the other saying "instructions"
 the instructions page will open a link in a new tab with a text document explaining the rules
 the die button will hide everything on the first page and pull up the game page
 once the game page is pulled up, i would like to have an animation of a die being rolled.
+***possibly try to have a smoke animation fill screen which transfers over to new page when smoke clears***
 once the die is rolled for the player, i would like the same animation for the enemy player.
 whoever has the higher roll out of 20 goes first.
 once the first player has been chosen i would like to animate the flipping of a card from the "library over to the "field of play" on both sides

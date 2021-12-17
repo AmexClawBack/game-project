@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>MTG</title>
 </head>
-<body>
+    <!-- this image will not change when home container is hidden, it remains. -->
+<body id="background-image">
+      
+      <!-- The container that will be hidden when game start -->
+
+    <div id="homepage-container">
+        <div id="welcome-text">
+            <p id="welcome-text">Welcome to Magic the Gathering</p>
+        </div>
+
+        <div id="buttons">
+            <form method="get" action="pages/instructions.html">
+                <input type="submit" value="Instructions">
+            </form>
+            <form method="get" action="pages/game.html">
+                <input type="submit" value="Embrace Your Fate">
+            </form>
+        </div>
+    </div>
+
     
+   
 
     <script src="js/script.js"></script>
 </body>

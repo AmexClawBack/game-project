@@ -1,0 +1,59 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* background image that stays the same on ALL pages */
+#background-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://c.tenor.com/v4OCwh8W3AcAAAAC/candles-light.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* container holding home page info. it wil disappear */
+#homepage-container{
+    display: flex;
+    height: 50vh;
+    width: 60vw;
+    align-items: center;
+    gap: 14vh;
+    flex-direction: column;
+    background-image: url(https://external-preview.redd.it/bRaraT3JcuGbgDJYUo6rXtjn3J6b5s-dIkVpkgDImaY.jpg?width=640&crop=smart&auto=webp&s=44ffccf59cbd1f81eab5f845ead92a0d74f2f34a);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Welcome to MTG text */
+#welcome-text {
+    color: red;
+    font-size: 40px;
+    text-shadow: 2px 2px 20px grey;
+    
+    
+}
+
+/* buttons of home page */
+#buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-shadow: 2px 2px 20px grey;
+    row-gap: 2vh;
+}
+/* input used for buttons */
+input {
+    background-color: red;
+    border-radius: 30%;
+    width: 20vh;
+}
+
+button a:hover {
+
+}
