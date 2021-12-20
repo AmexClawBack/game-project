@@ -58,3 +58,14 @@ input:hover {
     background-color: yellow;
     cursor: pointer
 }
+
+#instructions {
+    width: 25vw;
+    height: 100vh;
+    border: 5px outset black;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
