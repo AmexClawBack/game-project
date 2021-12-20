@@ -81,3 +81,26 @@ ol {
 li {
     margin-bottom: 2%;
 }
+
+#game-container {
+    /* display: flex; */
+    height: 90%;
+    width: 40%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 14vh; */
+    /* flex-direction: column; */
+    background-image: url(/images/86376.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+
+#buttons1 {
+    display: flex;
+    row-gap: 5vh;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+}
+
