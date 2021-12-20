@@ -61,11 +61,23 @@ input:hover {
 
 #instructions {
     width: 25vw;
-    height: 100vh;
+    height: 100%;
     border: 5px outset black;
     background-color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     
+}
+
+ol {
+    
+    padding: 8%;
+    list-style-type: upper-roman;
+    overflow-y: scroll;
+    
+}
+
+li {
+    margin-bottom: 2%;
 }
