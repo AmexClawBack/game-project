@@ -18,3 +18,6 @@ once this happens it automatically attacks opposing player.
 this continues until one player has 0 HP which causes him to lose and the opponent to win.
 i want an alert to appear in the middle of the screen with a fantasy style background that says "you lose" or "you win"
 on that alert i would like to add a restart button to reset the game back to the original hidden home page
+
+
+*** use key frames to animate cards ***

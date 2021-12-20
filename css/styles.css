@@ -54,6 +54,7 @@ input {
     width: 20vh;
 }
 
-button a:hover {
-
+input:hover {
+    background-color: yellow;
+    cursor: pointer
 }
