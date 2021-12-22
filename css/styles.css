@@ -55,8 +55,10 @@ input {
 }
 
 input:hover {
-    background-color: yellow;
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
     cursor: pointer
+    
 }
 
 #instructions {
@@ -181,7 +183,7 @@ li {
     background-image: url(../images/MTG\ card.jpg);
     background-repeat: no-repeat;
     background-size:contain;
-    
+
     height: 20vh;
     width: 5vw;
     margin-top: 500%;
