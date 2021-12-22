@@ -130,9 +130,7 @@ li {
 }
 
 #card1 > img{
-    background-image: url(../images/MTG\ card\ enemy.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
+    
     
     height: 20vh;
     width: 5vw;
@@ -140,9 +138,7 @@ li {
     margin-left: 200%
 }
 #card2 > img{
-    background-image: url(../images/MTG\ card\ enemy.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
+  
     
     height: 20vh;
     width: 5vw;
@@ -150,9 +146,7 @@ li {
     margin-left: 200%
 }
 #card3 > img{
-    background-image: url(../images/MTG\ card\ enemy.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
+   
     
     height: 20vh;
     width: 5vw;
@@ -160,9 +154,6 @@ li {
     margin-left: 200%
 }
 #card4 > img{
-    background-image: url(../images/MTG\ card.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
     
     height: 20vh;
     width: 5vw;
@@ -170,9 +161,7 @@ li {
     
 }
 #card5 > img{
-    background-image: url(../images/MTG\ card.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
+    
    
     height: 20vh;
     width: 5vw;
@@ -180,9 +169,7 @@ li {
     
 }
 #card6 > img{
-    background-image: url(../images/MTG\ card.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
+  
 
     height: 20vh;
     width: 5vw;
