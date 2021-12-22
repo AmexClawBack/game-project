@@ -83,7 +83,7 @@ li {
 }
 
 #game-container {
-    /* display: flex; */
+    display: flex;
     height: 90%;
     width: 40%;
     /* align-items: center; */
@@ -104,3 +104,86 @@ li {
 
 }
 
+#player-cards  {
+    display: flex;
+    gap: 1vw;
+      /* margin-top: 70%; */
+    margin-left:-16%;  
+    /* width: 100%; */
+    /* align-items: flex-end;     */
+    /* justify-content: space-between; */
+    
+    
+
+}
+
+#enemy-cards {
+    display: flex;
+    gap: 1vw;
+     /* margin-top: 10%;
+    margin-left:30%;  */
+    /* width: 100% */
+    /* justify-content: center; */
+    
+}
+
+#card1 > img{
+    background-image: url(../images/MTG\ card\ enemy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    height: 20vh;
+    width: 5vw;
+    margin-top: 100%;
+    margin-left: 200%
+}
+#card2 > img{
+    background-image: url(../images/MTG\ card\ enemy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    height: 20vh;
+    width: 5vw;
+    margin-top: 100%;
+    margin-left: 200%
+}
+#card3 > img{
+    background-image: url(../images/MTG\ card\ enemy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    height: 20vh;
+    width: 5vw;
+    margin-top: 100%;
+    margin-left: 200%
+}
+#card4 > img{
+    background-image: url(../images/MTG\ card.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    height: 20vh;
+    width: 5vw;
+    margin-top: 500%;
+    
+}
+#card5 > img{
+    background-image: url(../images/MTG\ card.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+   
+    height: 20vh;
+    width: 5vw;
+    margin-top: 500%;
+    
+}
+#card6 > img{
+    background-image: url(../images/MTG\ card.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    height: 20vh;
+    width: 5vw;
+    margin-top: 500%;
+    
+}
