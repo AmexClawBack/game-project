@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="../js/gamemanager.js"></script>
+    <script src="../js/player.js"></script>
+    <script src="../js/enemy.js"></script>
     <title>Game</title>
 </head>
 <body id="background-image">
     <div id="game-container">
         <!-- These cards are turned upside down -->
+        
         <div id="enemy-cards">
 
         <div id="card1">
-            <img src="../images/MTG card enemy.jpg"  alt="">
+            <img src="../images/mtg-front-4.png"  alt="">
         </div>
+        
         <div id="card2">
-            <img src="../images/MTG card enemy.jpg"  alt="">
+            <img src="../images/mtg-front-5.jpg"  alt="">
         </div>
         <div id="card3">
-            <img src="../images/MTG card enemy.jpg"  alt="">
+            <img src="../images/mtg-front-6.jpg"  alt="">
         </div>
     </div>
 
@@ -27,25 +32,27 @@
         <div id="player-cards">
             
         <div id="card4">
-            <img src="../images/MTG card.jpg"  alt="">
+            <img src="../images/mtg-front-1.jpg"  alt="">
         </div>
         <div id="card5">
-            <img src="../images/MTG card.jpg"  alt="">
+            <img src="../images/mtg-front-2.png"  alt="">
         </div>
         <div id="card6">
-            <img src="../images/MTG card.jpg"  alt="">
+            <img src="../images/mtg-front-3.png"  alt="">
         </div>
     </div>
+
  </div>
 
     <div id="buttons1">
         <form method="get" action="../index.html">
             <input type="submit" value="Restart">
         </form>
+        <a href="#" onclick="">
         <form method="get" action="#">
             <input type="submit" value="Attack">
         </form>
-
+        </a>
         <script src="../js/script.js"></script>
 </body>
 </html>
