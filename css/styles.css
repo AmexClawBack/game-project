@@ -47,12 +47,15 @@ body {
     font-size: 20px;
     text-shadow: 2px 2px 20px grey;
     row-gap: 2vh;
+    
 }
 /* input used for buttons */
 input {
     background-color: red;
     border-radius: 30%;
     width: 20vh;
+    margin-left: 20%;
+    margin-top: 59%
 }
 
 input:hover {
@@ -203,4 +206,21 @@ li {
         
 
     }
+}
+
+#health {
+    display: flex;
+    flex-direction: column;
+    color:red;
+    margin-right: 1%;
+
+}
+
+#enemy-health {
+  
+    margin-bottom: 45%;
+}
+
+#player-health {
+    
 }

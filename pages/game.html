@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="../js/gamemanager.js"></script>
-    <script src="../js/player.js"></script>
-    <script src="../js/enemy.js"></script>
     <title>Game</title>
 </head>
 <body id="background-image">
+    <div id="health">
+        <div id="enemy-health">
+            <h1>
+                Enemy Health: 20
+            </h1>
+        </div>
+        
+        <div id="player-health">
+           <h1>
+               Player Health: 20
+           </h1>
+       </div>
+       </div>
     <div id="game-container">
         <!-- These cards are turned upside down -->
         
@@ -44,11 +54,14 @@
 
  </div>
 
+
+
+ </div>
     <div id="buttons1">
         <form method="get" action="../index.html">
             <input type="submit" value="Restart">
         </form>
-        <a href="#" onclick="">
+        <a href="#" onclick="script.player.attack">
         <form method="get" action="#">
             <input type="submit" value="Attack">
         </form>
