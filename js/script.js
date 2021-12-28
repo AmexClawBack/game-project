@@ -8,12 +8,16 @@ let CardFour = document.getElementById('card4');
 let cardFive = document.getElementById('card5');
 let CardSix = document.getElementById('card6');
 let attackBtn = document.getElementById('btn1');
+
+// Player Name and Health
 class Player {
     constructor (name, health) {
     this.name = name;
     this.health = health;
     }
 }
+
+// Card Name and Stats
 class Card{
     constructor (cardName, attack, defense) {
     this.name = cardName;
@@ -26,6 +30,7 @@ class Card{
     }
 }
 
+// Identifying between players and cards
 class EnemyHealth extends Player {
     constructor(name, health){
         super(name, health)
@@ -48,6 +53,7 @@ class PlayerCards extends Card {
     }
 }
 
+//Settings for both players and their cards
 const enemy01 = new EnemyCards('Zalto', 7, 3); 
 const enemy02 = new EnemyCards('Cavalier', 6, 5);
 const enemy03 = new EnemyCards('Bloodpyre', 4, 1);
