@@ -1,5 +1,13 @@
-// create a roll method when "embrace your fate is clicked numbers 1-20 for each player to decide who goes first"
-
+//Defining all variables point to the different DIVs
+let enemyHealth = document.getElementById('enemy-health');
+let playerHealth = document.getElementById('player-health');
+let cardOne = document.getElementById('card1');
+let CardTwo = document.getElementById('card2');
+let cardThree = document.getElementById('card3');
+let CardFour = document.getElementById('card4');
+let cardFive = document.getElementById('card5');
+let CardSix = document.getElementById('card6');
+let attackBtn = document.getElementById('btn1');
 class Player {
     constructor (name, health) {
     this.name = name;
@@ -50,6 +58,8 @@ const player03 = new PlayerCards('Archfiend', 6, 6);
 
 const playerHealth = new PlayerHealth('Player', 20);
 const enemyHealth = new EnemyHealth('Opponent', 20);
+
+
 
 
 

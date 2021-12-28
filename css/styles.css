@@ -55,7 +55,7 @@ input {
     border-radius: 30%;
     width: 20vh;
     margin-left: 20%;
-    margin-top: 59%
+    /* margin-top: 59% */
 }
 
 input:hover {
