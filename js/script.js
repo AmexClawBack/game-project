@@ -1,13 +1,13 @@
 //Defining all variables point to the different DIVs
-let enemyHealth = document.getElementById('enemy-health');
-let playerHealth = document.getElementById('player-health');
-let cardOne = document.getElementById('card1');
-let CardTwo = document.getElementById('card2');
-let cardThree = document.getElementById('card3');
-let CardFour = document.getElementById('card4');
-let cardFive = document.getElementById('card5');
-let CardSix = document.getElementById('card6');
-let attackBtn = document.getElementById('btn1');
+let enemyHealth = document.querySelector('.eFont');
+let playerHealth = document.querySelector('.pFont');
+let cardOne = document.querySelector('.card1');
+let CardTwo = document.querySelector('.card2');
+let cardThree = document.querySelector('.card3');
+let CardFour = document.querySelector('.card4');
+let cardFive = document.querySelector('.card5');
+let CardSix = document.querySelector('.card6');
+let attackBtn = document.querySelector('.btn1');
 
 // Player Name and Health
 class Player {
@@ -94,9 +94,13 @@ function attack() {
 
 
     // Outcome of the attacking and defending player, which will be inflicted onto enemy health
-    let enemyHealth = document.getElementById('enemy-health');
-    const duelResult = enemyHealth.innerHtml = "(playerResult.attack - enemyResult.defense)";
-    console.log(duelResult);
+    
+
+    enemyHealth.innerText = 20 - (playerResult.attack - enemyResult.defense)
+    
+    playerHealth.innerText = 20 -(enemyResult.attack - playerResult.defense)
+
+    
     
     // Enemy health
     
@@ -108,10 +112,12 @@ function attack() {
         // Enemy health
     
         //  enemyHealth.innerHtml = "Enemy Health:" + enemyHealth-duelResult;
-        // console.log('enemyHealth = "Enemy Health:" + enemyHealth-duelResult;');
+        console.log('You have destroyed the enemys defending creature and dealt X damage to enemies health');
     } else if (playerResult.attack === enemyResult.defense) {
         console.log("You have destroyed the defending creature, but did not do any damage to your opponent")
         
-    } else {
-        console.log('The opponent is too powerful for you, better luck next time.')};
+    } else  
+        console.log('The opponent is too powerful for you, better luck next time.')
     };
+
+

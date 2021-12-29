@@ -256,6 +256,9 @@ li {
     color:red;
     margin-right: 1%;
     padding-left:25%;
+    /* width: 1vw; */
+   
+    
     
 
 }
@@ -263,12 +266,18 @@ li {
 #enemy-health {
   /* margin-top: -55%; */
     margin-bottom: 45%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #player-health {
-    
+    width: auto;
+    display: flex;
+    flex-direction: column;
 }
-.pFont {
+.pFont, .eFont {
     display: flex;
     justify-content: flex-start;
     color: red;
