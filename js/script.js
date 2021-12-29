@@ -87,11 +87,15 @@ console.log(playerResult)
 
 //Attack function
 function attack() {
-    
-    if (playerResult.attack >= enemyResult.defense) {
-
-        console.log(`${enemyHealth.innerHTML} = "Enemy Health:" ${playerResult.attack} - ${enemyResult.defense}`);
-    } else (
-        playerResult.attack < enemyResult.defense)
-        console.log('The opponent is too powerful for you, better luck next time.');
-}};
+    let enemyHealth = document.getElementById('enemy-health');
+    const duel = playerResult.attack - enemyResult.defense;
+    console.log(duel);
+    if (playerResult.attack > enemyResult.defense) {
+        console.log('enemyHealth = "Enemy Health:" + enemyHealth-duel;');
+        return enemyHealth.innerHtml = "Enemy Health:" + enemyHealth-duel;
+    } else if (playerResult.attack === enemyResult.defense) {
+        console.log("You have destroyed the defending creature, but did not do any damage to your opponent")
+        enemyResults.pop;
+    } else {
+        console.log('The opponent is too powerful for you, better luck next time.')};
+    };
