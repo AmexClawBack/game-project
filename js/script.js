@@ -94,13 +94,21 @@ function attack() {
 
 
     // Outcome of the attacking and defending player, which will be inflicted onto enemy health
-    const duel = playerResult.attack - enemyResult.defense;
-    console.log(duel);
+    let enemyHealth = document.getElementById('enemy-health');
+    const duelResult = enemyHealth.innerHtml = "(playerResult.attack - enemyResult.defense)";
+    console.log(duelResult);
+    
+    // Enemy health
+    
+    // console.log(enemyHealth.innerHtml =  - duelResult)
+    
 
     // The actual attack sequence when button is pressed
     if (playerResult.attack > enemyResult.defense) {
-        console.log('enemyHealth = "Enemy Health:" + enemyHealth-duel;');
-        return enemyHealth.innerHtml = "Enemy Health:" + enemyHealth-duel;
+        // Enemy health
+    
+        //  enemyHealth.innerHtml = "Enemy Health:" + enemyHealth-duelResult;
+        // console.log('enemyHealth = "Enemy Health:" + enemyHealth-duelResult;');
     } else if (playerResult.attack === enemyResult.defense) {
         console.log("You have destroyed the defending creature, but did not do any damage to your opponent")
         

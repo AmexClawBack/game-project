@@ -114,7 +114,7 @@ li {
 
 #game-container {
     display: flex;
-    height: 90%;
+    height: 100%;
     width: 40%;
     align-items: stretch;
     justify-content: stretch;
@@ -135,6 +135,8 @@ li {
     row-gap: 5vh;
     flex-direction: column;
     margin-bottom: 10vh;
+    padding-left:1% ;
+    padding-right:25%
 
 }
 
@@ -146,7 +148,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     flex:1;    
-    margin-left: 25%
+    margin-left: 5%
     
 }
 
@@ -159,7 +161,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     flex:1;
-    margin-left: 25%
+    margin-left: 5%
     
     
 }
@@ -168,7 +170,7 @@ li {
     /* display: inline-block; */
     
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 100%;
     margin-left: 200% */
 }
@@ -176,7 +178,7 @@ li {
     /* display: inline-block; */
     
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 100%;
     margin-left: 200% */
 }
@@ -184,28 +186,28 @@ li {
    
     /* display: inline-block; */
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 100%;
     margin-left: 200% */
 }
 #card4 > img{
     display: inline-block;
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 500%; */
     
 }
 #card5 > img{
     /* display: inline-block; */
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 500%; */
     
 }
 #card6 > img{
     /* display: inline-block; */
     height: auto;
-    width: 150px;
+    width: 200px;
     /* margin-top: 500%; */
 }
 
@@ -214,20 +216,37 @@ li {
     #game-container{
         display:flex;
         flex-direction: column ;
-        
-        
+        background-size:cover;
+        height: 100%;
+        width: 100%;
+       
     }
+
     #enemy-cards, #player-cards {
-      overflow-y: auto;
+      overflow-x: scroll;
       display: flex;
       flex-direction: column;
       /* justify-content: flex-start; */
-        margin-bottom: 15%;
-        
-      
-      
-        
+         /* margin-bottom: 15%; */
+        /* width:auto;  */
+    }
 
+    #buttons1 {
+         /* width: 100%;
+        height: auto;
+        margin-right:25%;
+        margin-left: -5%; */
+       display: flex;
+
+    }
+
+    #health {
+         width: 100%;
+        /* height: auto;  */
+         /* margin-left:25%; */
+        display: flex;
+        margin-left:20%;
+   
     }
 }
 
@@ -236,14 +255,24 @@ li {
     flex-direction: column;
     color:red;
     margin-right: 1%;
+    padding-left:25%;
+    
 
 }
 
 #enemy-health {
-  margin-top: -55%;
+  /* margin-top: -55%; */
     margin-bottom: 45%;
 }
 
 #player-health {
+    
+}
+.pFont {
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+    font-size: 3em;
+   
     
 }
