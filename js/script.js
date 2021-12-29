@@ -67,35 +67,43 @@ const playerDeck = [new PlayerCards('Yargle', 9, 3), new PlayerCards('Extractor'
 const userHealth = new PlayerHealth('Player', 20);
 const opponentHealth = new EnemyHealth('Opponent', 20);
 
-// Found this solution on Progamiz.com
-function randomOpponent(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-    const item = arr[randomIndex];
-    return item;
-}
-const enemyResult = randomOpponent(enemyDeck);
-console.log(enemyResult)
 
 
-function randomPlayer(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-    const item = arr[randomIndex];
-    return item;
-}
-const playerResult = randomPlayer(playerDeck);
-console.log(playerResult)
 
 //Attack function
 function attack() {
-    let enemyHealth = document.getElementById('enemy-health');
+
+    // Generates random player and enemy cards
+    // Found this solution on Progamiz.com
+    function randomOpponent(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        const item = arr[randomIndex];
+        return item;
+    }
+    const enemyResult = randomOpponent(enemyDeck);
+    console.log(enemyResult)
+    
+    
+    function randomPlayer(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        const item = arr[randomIndex];
+        return item;
+    }
+    const playerResult = randomPlayer(playerDeck);
+    console.log(playerResult)
+
+
+    // Outcome of the attacking and defending player, which will be inflicted onto enemy health
     const duel = playerResult.attack - enemyResult.defense;
     console.log(duel);
+
+    // The actual attack sequence when button is pressed
     if (playerResult.attack > enemyResult.defense) {
         console.log('enemyHealth = "Enemy Health:" + enemyHealth-duel;');
         return enemyHealth.innerHtml = "Enemy Health:" + enemyHealth-duel;
     } else if (playerResult.attack === enemyResult.defense) {
         console.log("You have destroyed the defending creature, but did not do any damage to your opponent")
-        enemyResults.pop;
+        
     } else {
         console.log('The opponent is too powerful for you, better luck next time.')};
     };
