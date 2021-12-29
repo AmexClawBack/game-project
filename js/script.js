@@ -54,19 +54,44 @@ class PlayerCards extends Card {
 }
 
 //Settings for both players and their cards
-const enemy01 = new EnemyCards('Zalto', 7, 3); 
-const enemy02 = new EnemyCards('Cavalier', 6, 5);
-const enemy03 = new EnemyCards('Bloodpyre', 4, 1);
+const enemyDeck = [new EnemyCards('Zalto', 7, 3), new EnemyCards('Cavalier', 6, 5), new EnemyCards('Bloodpyre', 4, 1) ];
+// const enemy01 = new EnemyCards('Zalto', 7, 3); 
+// const enemy02 = new EnemyCards('Cavalier', 6, 5);
+// const enemy03 = new EnemyCards('Bloodpyre', 4, 1);
 
-const player01 = new PlayerCards('Yargle', 9, 3);
-const player02 = new PlayerCards('Extractor', 5, 5);
-const player03 = new PlayerCards('Archfiend', 6, 6);
+const playerDeck = [new PlayerCards('Yargle', 9, 3), new PlayerCards('Extractor', 5, 5), new PlayerCards('Archfiend', 6, 6)];
+// const player01 = new PlayerCards('Yargle', 9, 3);
+// const player02 = new PlayerCards('Extractor', 5, 5);
+// const player03 = new PlayerCards('Archfiend', 6, 6);
 
-const playerHealth = new PlayerHealth('Player', 20);
-const enemyHealth = new EnemyHealth('Opponent', 20);
+const userHealth = new PlayerHealth('Player', 20);
+const opponentHealth = new EnemyHealth('Opponent', 20);
+
+// Found this solution on Progamiz.com
+function randomOpponent(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+    return item;
+}
+const enemyResult = randomOpponent(enemyDeck);
+console.log(enemyResult)
 
 
+function randomPlayer(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+    return item;
+}
+const playerResult = randomPlayer(playerDeck);
+console.log(playerResult)
 
+//Attack function
+function attack() {
+    
+    if (playerResult.attack >= enemyResult.defense) {
 
-
-
+        console.log(`${enemyHealth.innerHTML} = "Enemy Health:" ${playerResult.attack} - ${enemyResult.defense}`);
+    } else (
+        playerResult.attack < enemyResult.defense)
+        console.log('The opponent is too powerful for you, better luck next time.');
+}};

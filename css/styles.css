@@ -49,12 +49,27 @@ body {
     row-gap: 2vh;
     
 }
+
+#buttons2 {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 20px; */
+    text-shadow: 2px 2px 20px grey;
+    row-gap: 2vh;
+    background-color: red;
+    border-radius: 30%;
+    width: 20vh;
+    margin-left: 20%;
+    align-items: center;
+    height: 4vh
+}
 /* input used for buttons */
 input {
     background-color: red;
     border-radius: 30%;
     width: 20vh;
     margin-left: 20%;
+    font-size: x-small;
     /* margin-top: 59% */
 }
 
@@ -62,6 +77,14 @@ input:hover {
     background: #ff96ad;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
     cursor: pointer
+    
+}
+
+#buttons2:hover {
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+    cursor: pointer;
+    /* font-weight: bolder; */
     
 }
 
