@@ -95,10 +95,14 @@ function attack() {
 
     // Outcome of the attacking and defending player, which will be inflicted onto enemy health
     
+    const playerAttackOutcome = playerResult.attack - enemyResult.defense;
+    const enemyAttackOutcome = enemyResult.attack - playerResult.defense;
+    console.log(playerAttackOutcome);
+    console.log(enemyAttackOutcome);
 
-    enemyHealth.innerText = 20 - (playerResult.attack - enemyResult.defense)
+    enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
     
-    playerHealth.innerText = 20 -(enemyResult.attack - playerResult.defense)
+    playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
 
     
     
