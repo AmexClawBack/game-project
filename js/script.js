@@ -96,6 +96,7 @@ function attack() {
     // Outcome of the attacking and defending player, which will be inflicted onto enemy health
     
     const playerAttackOutcome = playerResult.attack - enemyResult.defense;
+   
     const enemyAttackOutcome = enemyResult.attack - playerResult.defense;
     console.log(playerAttackOutcome);
     console.log(enemyAttackOutcome);
@@ -108,7 +109,6 @@ function attack() {
     
     // Enemy health
     
-    // console.log(enemyHealth.innerHtml =  - duelResult)
     
 
     // The actual attack sequence when button is pressed
@@ -124,4 +124,7 @@ function attack() {
         console.log('The opponent is too powerful for you, better luck next time.')
     };
 
-
+    if (opponentHealth.health <= 0) {
+        alert("You have won!")
+        console.log('You have won!')
+    };
