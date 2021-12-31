@@ -135,13 +135,14 @@ function attack() {
         //Alert to describe the battle outcome
         alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` )
     
-    }};
+    }
+};
     
     //Set the win/lose condition
     if (enemyHealth.innerText <= 0) {
         console.log("working")
         alert(`You have defeated your opponent. Press ${attackBtn} to restart the game`)
-    }; if (userHealth.health <= 0) {
+    }; if (playerHealth.innerText <= 0) {
         console.log("working")
         alert(`You have been defeated by your opponent. Press ${attackBtn} to restart the game`)
     } else {
