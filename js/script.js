@@ -13,6 +13,7 @@ let playerHealth = document.querySelector('.pFont');
 
 let battleParticipants = document.querySelector(".btn-header");
 let battleInfo = document.querySelector(".modal-info");
+let footer = document.querySelector(".footer-info")
 
 
 // Player Name and Health
@@ -142,24 +143,37 @@ function attack() {
     //Set the win/lose condition
     //User wins
     if (opponentHealth.health === 0) {
-        // alert(`You have defeated your opponent. Refresh your browser to restart the game`)
+       
+        battleParticipants.innerText = `GAME OVER!`;
+        battleInfo.innerText = `You have defeated your opponent!`;
+        footer.innerText = `Press "Restart" to play again!`;
     }; if (opponentHealth.health < 0) {
-        // alert(`You have defeated your opponent. Refresh your browser to restart the game`)
+       
+        battleParticipants.innerText = `GAME OVER!`;
+        battleInfo.innerText = `You have defeated your opponent!`;
+        footer.innerText = `Press "Restart" to play again!`;
     };
     //Opponent wins
     if(userHealth.health === 0) {
-        // alert('You have been defeated. Refresh your browser to try again')
+       
+        battleParticipants.innerText = `GAME OVER!`;
+        battleInfo.innerText = 'You have been defeated. Refresh your browser to try again';
+        footer.innerText = `Press "Restart" to play again!`;
     }; if (userHealth.health < 0) {
-        // alert('You have been defeated. Refresh your browser to try again.')
+    
+        battleParticipants.innerText = `GAME OVER!`;
+        battleInfo.innerText = 'You have been defeated. Refresh your browser to try again';
+        footer.innerText = `Press "Restart" to play again!`;
     };
 };
  
 //Found this solution on "Pyscho Developer" youtube channel.
+//Modal popupbox JS
 // Selector
 const clickBtn = document.querySelector('.btn');
 const closeBtn = document.querySelector('.close-btn')
-
 const modal = document.querySelector('.modal')
+
 
 // add event listener
 clickBtn.addEventListener('click', modalOpen);

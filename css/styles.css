@@ -223,6 +223,7 @@ li {
 position: fixed;
 /* display: flex; */
 
+
 }
 
 .btn-header {
@@ -244,6 +245,7 @@ position: fixed;
     margin-left: -70%;
     margin-top: -30vh;
     display: flex;
+    
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
