@@ -220,23 +220,29 @@ li {
 /* Copied from youtube tutorial */
 
 #container {
-
+position: fixed;
+/* display: flex; */
 
 }
 
 .btn-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 35px 0px;
+    padding: 35px;
+    background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
 }
-.btn #buttons2{
+.btn {
     transition: all 0.5s ease;
+    margin-top: 15%;
 }
 
 .modal {
-    width: 70%;
-    margin: auto;
+    width: 50%;
+    margin-left: -70%;
+    margin-top: -30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -244,6 +250,8 @@ li {
     display: none;
     box-shadow: 0px 0px 15px 2px rgb(82, 78, 78);
     animation: opacity 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
 }
 
 @keyframes opacity {
@@ -299,9 +307,9 @@ li {
     padding: 5px 0px;
 }
 #buttons1 {
-    display: flex;
-    row-gap: 5vh;
-    flex-direction: column;
+    /* display: flex; */
+    /* row-gap: 5vh; */
+    /* flex-direction: column; */
     margin-bottom: 10vh;
     padding-left:1% ;
     padding-right:25%

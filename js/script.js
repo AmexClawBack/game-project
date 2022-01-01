@@ -9,7 +9,11 @@ let playerHealth = document.querySelector('.pFont');
 // let CardFour = document.querySelector('.card4');
 // let cardFive = document.querySelector('.card5');
 // let CardSix = document.querySelector('.card6');
-let attackBtn = document.querySelector('.btn1');
+// let attackBtn = document.querySelector('.btn1');
+
+let battleParticipants = document.querySelector(".btn-header");
+let battleInfo = document.querySelector(".modal-info");
+
 
 // Player Name and Health
 class Player {
@@ -21,7 +25,7 @@ class Player {
 
 // Card Name and Stats
 class Card{
-    constructor (cardName, attack, defense) {
+    constructor (cardName, attack, defense,) {
     this.name = cardName;
     this.attack = attack;
     this.defense = defense;
@@ -53,7 +57,7 @@ class PlayerCards extends Card {
 };
 
 //Settings for both players and their cards
-const enemyDeck = [new EnemyCards('Zalto, Fire Giant Duke', 7, 3), new EnemyCards('Cavalier of Flame', 6, 5), new EnemyCards('Bloodpyre Elemental', 4, 1) ];
+const enemyDeck = [new EnemyCards('Zalto, Fire Giant Duke', 7, 3,), new EnemyCards('Cavalier of Flame', 6, 5), new EnemyCards('Bloodpyre Elemental', 4, 1) ];
 const playerDeck = [new PlayerCards('Yargle, Glutton of Urborg', 9, 3), new PlayerCards('Extractor Demon', 5, 5), new PlayerCards('Archfiend of Spite', 6, 6)];
 // Player and Enemy health
 const userHealth = new PlayerHealth('Player', 20);
@@ -92,25 +96,23 @@ function attack() {
             //Outcome of the battle to display on health amount
             enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
             playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
-        
-        // //Alert to describe battle participants
-        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
 
-        // //Alert to describe the battle outcome
-        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, attack overpowers ${playerResult.name}'s defense, causing ${enemyAttackOutcome} damage to your health.` )
-        
+
+        // //Alert to describe battle participants
+        battleParticipants.innerText = `A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`
+      
+        battleInfo.innerText = `Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, attack overpowers ${playerResult.name}'s defense, causing ${enemyAttackOutcome} damage to your health.`
     // player attack greater than enemy defense AND enemy attack less than player defense
     }; if(playerResult.attack > enemyResult.defense && enemyResult.attack < playerResult.defense){
 
         //Outcome of the battle to display on health amount
         enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
-        
-
+    
         //Alert to describe battle participants
-        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
+        battleParticipants.innerText = `A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!` 
 
         // //Alert to describe the battle outcome
-        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
+        battleInfo.innerText = `Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` 
 
         //Player attack greater than enemy defense and enemy attack equal to player defnese
     }; if(playerResult.attack > enemyResult.defense && enemyResult.attack === playerResult.defense){
@@ -119,21 +121,21 @@ function attack() {
         enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
     
         //Alert to describe battle participants
-        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`);
+        battleParticipants.innerText = `A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`
 
         // //Alert to describe the battle outcome
-        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
+        battleInfo.innerText = `Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.`
 
     };if(playerResult.attack === enemyResult.defense && enemyResult.attack > playerResult.defense){
     
         //Outcome of the battle to display on health amount      
-        // playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
+        playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
 
-        // //Alert to describe battle participants
-        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
+        // //Alert to describe battle participants 
+        battleParticipants.innerText = `A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`
 
         // //Alert to describe the battle outcome
-        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` )
+        battleInfo.innerText = `Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` 
     
     };
 
