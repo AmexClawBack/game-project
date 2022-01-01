@@ -8,82 +8,104 @@
     <title>Game</title>
 </head>
 <body id="background-image">
+
+<!-- Autoplay song for game page -->
     <embed src="../songs/battlepage.mp3" loop="true" autostart="true" width="2" height="0">
-    <div id="health">
+    
+        <!-- Box containing health bars -->
+        <div id="health">
+            <!-- enemy health identifier -->
         <div id="enemy-health">
             <h2>
                 Enemy Health: 
             </h2>
+            <!-- enemy health count -->
             <p class="eFont">20</p>
         </div>
         
+        <!-- player health identifier -->
         <div id="player-health">
            <h2>
                Player Health: 
            </h2>
+           <!-- player health count -->
            <p class="pFont">20</p>
        </div>
        </div>
     <div id="game-container">
         <!-- These cards are turned upside down -->
-        
+        <!-- Enemy cards -->
         <div id="enemy-cards">
 
         <div id="card1">
-            <img src="../images/mtg-front-4.png"  alt="">
+            <img src="../images/Bloodpyre.jpg"  alt="Bloodpyre Elemental">
         </div>
         
         <div id="card2">
-            <img src="../images/mtg-front-5.jpg"  alt="">
+            <img src="../images/Cavalier.jpg"  alt="Cavalier of Flame">
         </div>
         <div id="card3">
-            <img src="../images/mtg-front-6.jpg"  alt="">
+            <img src="../images/Zalto.png"  alt="Zalto, Fire Giant Duke">
         </div>
     </div>
 
         <!-- These cards are turned upside right -->
+        <!-- Players cards -->
         <div id="player-cards">
             
         <div id="card4">
-            <img src="../images/mtg-front-1.jpg"  alt="">
+            <img src="../images/Extractor.png"  alt="Extractor Demon">
         </div>
         <div id="card5">
-            <img src="../images/mtg-front-2.png"  alt="">
+            <img src="../images/Yargle.jpg"  alt="Yargle, Glutton of Urborg">
         </div>
         <div id="card6">
-            <img src="../images/mtg-front-3.png"  alt="">
+            <img src="../images/Archfiend.png"  alt="Archfiend of Spite">
         </div>
     </div>
 
  </div>
 
-<!-- <section id="container">
-    <header>
-    <button class="btn">Click</button>
-    </header>
 
-    <section class="modal">
-        <header class="modal-header">
-            Modal Header <span class="close-btn">&times;</span>
-        </header>
-        <div class="modal-content">
-            <h5>Hello I am a modal....</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde placeat illum. Quisquam pariatur voluptates quae blanditiis molestiae magni, doloremque fuga. Rem eveniet voluptas ut, laudantium sed non qui rerum?</p>
-        </div>
-        <footer class="modal-footer">
-            <h3>Modal footer</h3>
-        </footer>
-    
-    </section>
-</section> -->
 
- <!-- </div> -->
+
+ <!-- 'Restart' Button -->
     <div id="buttons1">
         <form method="get" action="../index.html">
             <input type="submit" class="btn1" value="Restart">
         </form>
+
+ <!-- Popup modal being used for alerts -->
+ <!-- copied from youtube tutorial -->
+        <section id="container">
+
+            <!-- 'Click Me' button -->
+                <header>
+                <button onclick="attack()"  class="btn" id="buttons2">Attack</button>
+                </header>
         
-        <button onclick="attack()" id="buttons2">Attack</button>
+        <!-- Modal Header -->
+            <section class="modal">
+                <header class="btn-header">
+                    Modal Header <span class="close-btn">&times;</span>
+                </header>
+        
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <h5>Hello I am a modal....</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde placeat illum. Quisquam pariatur voluptates quae blanditiis molestiae magni, doloremque fuga. Rem eveniet voluptas ut, laudantium sed non qui rerum?</p>
+                </div>
+        
+                <!-- Modal Footer -->
+                <footer class="modal-footer">
+                    <h3>Modal footer</h3>
+                </footer>
+            
+            </section>
+        </section>
+        <!-- 'Attack' Button -->
+        
+
         <script src="../js/script.js"></script>
 </body>
 </html>

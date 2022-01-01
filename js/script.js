@@ -93,11 +93,11 @@ function attack() {
             enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
             playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
         
-        //Alert to describe battle participants
-        alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
+        // //Alert to describe battle participants
+        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
 
-        //Alert to describe the battle outcome
-        alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, attack overpowers ${playerResult.name}'s defense, causing ${enemyAttackOutcome} damage to your health.` )
+        // //Alert to describe the battle outcome
+        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, attack overpowers ${playerResult.name}'s defense, causing ${enemyAttackOutcome} damage to your health.` )
         
     // player attack greater than enemy defense AND enemy attack less than player defense
     }; if(playerResult.attack > enemyResult.defense && enemyResult.attack < playerResult.defense){
@@ -107,10 +107,10 @@ function attack() {
         
 
         //Alert to describe battle participants
-        alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
+        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
 
-        //Alert to describe the battle outcome
-        alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
+        // //Alert to describe the battle outcome
+        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
 
         //Player attack greater than enemy defense and enemy attack equal to player defnese
     }; if(playerResult.attack > enemyResult.defense && enemyResult.attack === playerResult.defense){
@@ -119,38 +119,56 @@ function attack() {
         enemyHealth.innerText = opponentHealth.health -= playerAttackOutcome;
     
         //Alert to describe battle participants
-        alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`);
+        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`);
 
-        //Alert to describe the battle outcome
-        alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
+        // //Alert to describe the battle outcome
+        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` );
 
     };if(playerResult.attack === enemyResult.defense && enemyResult.attack > playerResult.defense){
     
         //Outcome of the battle to display on health amount      
-        playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
+        // playerHealth.innerText = userHealth.health -= enemyAttackOutcome;
 
-        //Alert to describe battle participants
-        alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
+        // //Alert to describe battle participants
+        // alert(`A fierce battle ensues between your creature: ${playerResult.name} and opponents' creature: ${enemyResult.name}!`)
 
-        //Alert to describe the battle outcome
-        alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` )
+        // //Alert to describe the battle outcome
+        // alert(`Your creature: ${playerResult.name}, attack overpowers ${enemyResult.name}'s defense, causing ${playerAttackOutcome} damage to opponents health. Your opponents' creature: ${enemyResult.name}, is unable to overpower ${playerResult.name}'s defense, you lose no health.` )
     
     };
 
     //Set the win/lose condition
     //User wins
     if (opponentHealth.health === 0) {
-        alert(`You have defeated your opponent. Refresh your browser to restart the game`)
+        // alert(`You have defeated your opponent. Refresh your browser to restart the game`)
     }; if (opponentHealth.health < 0) {
-        alert(`You have defeated your opponent. Refresh your browser to restart the game`)
+        // alert(`You have defeated your opponent. Refresh your browser to restart the game`)
     };
     //Opponent wins
     if(userHealth.health === 0) {
-        alert('You have been defeated. Refresh your browser to try again')
+        // alert('You have been defeated. Refresh your browser to try again')
     }; if (userHealth.health < 0) {
-        alert('You have been defeated. Refresh your browser to try again.')
+        // alert('You have been defeated. Refresh your browser to try again.')
     };
 };
-    
+ 
+//Found this solution on "Pyscho Developer" youtube channel.
+// Selector
+const clickBtn = document.querySelector('.btn');
+const closeBtn = document.querySelector('.close-btn')
+
+const modal = document.querySelector('.modal')
+
+// add event listener
+clickBtn.addEventListener('click', modalOpen);
+closeBtn.addEventListener("click", modalClose)
 
 
+// run a function
+function modalOpen() {
+    modal.style.display = "block";
+}
+
+function modalClose() {
+    modal.style.display = "none"
+}

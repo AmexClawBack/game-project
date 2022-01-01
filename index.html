@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>MTG</title>
 </head>
-    <!-- this image will not change when home container is hidden, it remains. -->
 <body id="background-image">
-    <embed src="songs/homepage.mp3" loop="true" autostart="true" width="2" height="0">
-      <!-- The container that will be hidden when game start -->
-
+    <!-- Homepage song -->
+    <embed src="/songs/homepage.mp3" loop="true" autostart="true" width="2" height="0">
+    
+<!-- Container holding homepage elements -->
     <div id="homepage-container">
         <div id="welcome-text">
             <p id="welcome-text">Welcome to Magic the Gathering</p>
         </div>
 
+        <!-- buttons container -->
         <div id="buttons">
+            <!-- Instructions button -->
             <form method="get" action="pages/instructions.html">
                 <input type="submit" value="Instructions">
             </form>
+            <!-- Start game button -->
             <form method="get" action="pages/game.html">
                 <input type="submit" value="Embrace Your Fate">
             </form>
