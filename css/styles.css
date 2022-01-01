@@ -222,7 +222,7 @@ li {
 #container {
 position: fixed;
 /* display: flex; */
-overflow: scroll;
+/* overflow: scroll; */
 
 
 }
@@ -246,7 +246,7 @@ overflow: scroll;
     margin-left: -70%;
     margin-top: -30vh;
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
