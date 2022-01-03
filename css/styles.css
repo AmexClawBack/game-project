@@ -185,6 +185,12 @@ li {
         display: flex;
         margin-left:20%;
     }
+
+    /* Change Modal Box size */
+    #container {
+        width: 100%;
+        display: flex;
+    }
 }
 
 #health {
@@ -222,7 +228,7 @@ li {
 #container {
 position: fixed;
 /* display: flex; */
-/* overflow: scroll; */
+
 
 
 }
