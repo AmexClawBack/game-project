@@ -1,4 +1,4 @@
-https://replit.com/@DK52/game-project?v=1
+https://game-project.dk52.repl.co/
 
 <!-- PSEUDO CODE -->
 When the user opens the game page there will be a full screen background of a dark temple with candles 
