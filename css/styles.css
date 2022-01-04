@@ -176,7 +176,7 @@ li {
       flex-direction: column;
     }
 
-    #buttons1 {
+    #buttons1 #buttons2 {
        display: flex;
     }
 
